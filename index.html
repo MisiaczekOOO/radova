@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radova · Content programs for SaaS, signed off by people</title>
+  <meta name="description" content="Radova runs a monthly content program for seed and Series A SaaS companies: blog, LinkedIn, SEO and AI-answer visibility. Built on your product knowledge, edited by people, never published without your approval.">
+  <meta name="theme-color" content="#191C1D">
+  <link rel="preload" href="assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/pricing.js" defer></script>
+  <script src="assets/js/letter-swap.js" defer></script>  <script src="assets/js/hero-grid.js" defer></script>
+  <script src="assets/js/system.js" defer></script>
+  <!-- design helper: remove before launch -->
+  <script src="assets/js/accent-panel.js" defer></script>
+  <script src="assets/js/hairline-kernel.js" defer></script>
+  <script src="assets/js/figures-host.js" defer></script>
+  <script type="module" src="assets/figures/drafts.js"></script>
+  <script type="module" src="assets/figures/cut.js"></script>
+  <script type="module" src="assets/figures/rank.js"></script>
+  <script type="module" src="assets/figures/pipeline.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the content written by AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first draft is. It is written by our system from a knowledge base about your product, not from a model's general knowledge. Then an editor checks every claim against your product docs and fixes tone, structure and SEO, and you approve it. Nothing is published without a person signing it off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Google penalise AI-assisted content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google ranks content on whether it is helpful, not on how it was produced. What gets demoted is thin, unchecked content published at volume. Every article here is grounded in your product, fact-checked by an editor and approved by you before it goes live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the content and the system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do. The articles, the knowledge base about your product, your brand voice guide and the workflows built for you stay yours, including if you stop working with us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you need from our side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Access to Google Search Console, GA4, your CMS and the social accounts we post to. One person who approves content within the agreed window, for example two working days. And a product expert we can talk to for 15 minutes, twice a month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How soon will we see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onboarding takes about six weeks, so the first production articles go live in month two. Search results usually take around three months to show, which is why the minimum term is three months. Every monthly review compares results with the baseline audit from week one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does visibility in AI answers mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tools like ChatGPT and Perplexity answer questions by quoting sources. We pick the questions your buyers ask, structure your content so it can be quoted (direct answers, clean headings, schema, data), and check every month whether you are cited for them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we stop after the minimum term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. After the first three months the program runs month to month, and you can stop at the end of any month. You keep everything that was built."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- partial: header -->
+  <header class="site-header" data-header>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="/" aria-label="Radova home">
+        <svg class="brand__mark" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M8.5 14.5l3.8 3.8 7.2-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand__name">Radova</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#modules">What's included</a></li>
+          <li><a href="#packages">Packages</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <a class="site-header__link" href="#packages">Packages</a>
+        <a class="btn btn--primary btn--sm" href="https://cal.com/radova/intro">Book an intro call</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- partial: hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__stage">
+      <div class="hero__bg" aria-hidden="true" data-hero-bg>
+        <canvas class="hero__grid" data-hero-grid></canvas>
+      </div>
+      <div class="wrap hero__inner">
+        <a class="announce" href="#how">
+          <span class="announce__dot" aria-hidden="true"></span>
+          <!-- TODO: replace 12 with the real number of active automations -->
+          <span>Right now: <b class="announce__num">12</b> active automations running</span>
+          <svg class="icon icon--sm" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <h1 id="hero-title" class="hero__title">
+          Content that gets found.
+          <span class="accent">Signed off by a human.</span>
+        </h1>
+        <p class="hero__lede">Radova runs your blog, LinkedIn and search visibility as one monthly program. Every article is built on your product knowledge, checked by an editor and approved by you, then measured by what it brings in.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light btn--lg" href="https://cal.com/radova/intro">Book an intro call</a>
+          <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <!-- partial: how it works -->
+    <section id="how" class="section how" aria-labelledby="how-title">
+      <div class="wrap">
+        <header class="section__head section__head--center">
+          <h2 id="how-title" class="section__title">How the content system works</h2>
+          <p class="section__lede">Your data goes in. A knowledge base about your product sits in the middle. Content that ranks and gets quoted comes out, and its results decide what comes next.</p>
+        </header>
+
+        <div class="sys" data-sys>
+          <svg class="sys__wires" aria-hidden="true" data-sys-wires></svg>
+          <div class="sys__col sys__col--in">
+            <p class="sys__cap">What goes in</p>
+            <ul class="sys__chips">
+              <li class="sys__chip sys__chip--in" data-sys-in="0"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg><span>Search Console</span></li>
+              <li class="sys__chip sys__chip--in" data-sys-in="1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5h16"/><path d="M7 16v-5M12 16V6.5M17 16v-7"/></svg><span>Analytics (GA4)</span></li>
+              <li class="sys__chip sys__chip--in" data-sys-in="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h8.5L18.25 7.5v12.75H6z"/><path d="M9 11h6M9 14.5h6"/></svg><span>Your product docs</span></li>
+              <li class="sys__chip sys__chip--in" data-sys-in="3"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="12" r="4"/><circle cx="16" cy="12" r="4"/></svg><span>Competitor content</span></li>
+              <li class="sys__chip sys__chip--in" data-sys-in="4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6.5h14v9H10l-4 3.5v-3.5H5z"/></svg><span>Your brand voice</span></li>
+            </ul>
+          </div>
+
+          <div class="sys__engine" data-sys-engine>
+            <div class="sys__engine-head">
+              <span class="sys__engine-name">The engine</span>
+              <span class="sys__engine-state"><i></i><span data-sys-state>Reading your data</span></span>
+            </div>
+            <ol class="sys__stages">
+                <li class="sys__stage" data-sys-stage="0"><span class="sys__stage-no">01</span><span class="sys__stage-body"><b>Product knowledge base</b><span>Everything true about your product, in one place</span></span></li>
+                <li class="sys__stage" data-sys-stage="1"><span class="sys__stage-no">02</span><span class="sys__stage-body"><b>Topic &amp; brief</b><span>What to write, for which search, and why</span></span></li>
+                <li class="sys__stage" data-sys-stage="2"><span class="sys__stage-no">03</span><span class="sys__stage-body"><b>Draft</b><span>Written from the knowledge base, not from guesses</span></span></li>
+                <li class="sys__stage" data-sys-stage="3"><span class="sys__stage-no">04</span><span class="sys__stage-body"><b>Human check</b><span>An editor verifies the facts; you give the final OK</span></span></li>
+            </ol>
+          </div>
+
+          <div class="sys__col sys__col--out">
+            <p class="sys__cap">What comes out</p>
+            <ul class="sys__chips">
+              <li class="sys__chip sys__chip--out" data-sys-out="0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h8.5L18.25 7.5v12.75H6z"/><path d="M9 11h6M9 14.5h6M9 18h3.5"/></svg><span>Blog articles</span></li>
+              <li class="sys__chip sys__chip--out" data-sys-out="1"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8"/></svg><span>LinkedIn posts</span></li>
+              <li class="sys__chip sys__chip--out" data-sys-out="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg><span>Answers in ChatGPT &amp; Perplexity</span></li>
+              <li class="sys__chip sys__chip--out" data-sys-out="3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l5-5 4 3 7-8"/><path d="M15 8h5v5"/></svg><span>Google rankings</span></li>
+            </ul>
+          </div>
+
+          <div class="sys__loop" data-sys-loop>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 0 1-13.7 5.6L4 15.3M4 20v-4.7h4.7"/></svg>
+            <span>Rankings, traffic and AI citations flow back in and pick next month's topics.</span>
+          </div>
+        </div>
+
+        <ul class="sys__points">
+          <li><b>Grounded in your product.</b> Claims come from a knowledge base built from your docs, so they are facts, not a model's guesses.</li>
+          <li><b>Built to be found and quoted.</b> Every piece is shaped for search and for AI answers: direct answers, clean headings, schema.</li>
+          <li class="sys__cta">
+            <b>See it on your own data.</b>
+            <a class="btn btn--primary btn--lg" href="https://cal.com/radova/intro">Book an intro call</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- partial: modules -->
+    <section id="modules" class="section" aria-labelledby="modules-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 id="modules-title" class="section__title">Four parts, one program</h2>
+          <p class="section__lede">You don't buy articles by the piece. You get a program that plans, produces, maintains and reports, every month.</p>
+        </header>
+
+        <div class="features">
+          <article class="card feature">
+            <div class="feature__body">
+              <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h8.5L18.25 7.5v12.75H6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 11h6M9 14.5h6M9 18h3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <h3 class="card__title">Blog</h3>
+              <p class="card__text">4, 8 or 12 articles a month, depending on the package. Brief, draft, edit, your approval, publish, all grounded in your product knowledge. Volume ramps up gradually, for example 4, then 8, then 12.</p>
+              <a class="btn btn--ghost btn--sm feature__more" href="/services/blog" aria-label="Learn more about Blog">Learn more</a>
+            </div>
+            <div class="feature__art">
+              <div class="figure" data-figure="drafts" aria-label="Six article drafts in a tray; the one under the pointer stands up for review."></div>
+              <span class="feature__read" data-figure-read="drafts" aria-hidden="true">rest</span>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="feature__body">
+              <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.2 10.9l7.6-3.8M8.2 13.1l7.6 3.8" stroke="currentColor" stroke-width="1.5"/></svg>
+              <h3 class="card__title">Social</h3>
+              <p class="card__text">LinkedIn plus one more channel of your choice. Posts are repurposed from the month's articles, on a publishing calendar you approve. Instagram for B2C SaaS only.</p>
+              <a class="btn btn--ghost btn--sm feature__more" href="/services/social" aria-label="Learn more about Social">Learn more</a>
+            </div>
+            <div class="feature__art">
+              <div class="figure" data-figure="cut" aria-label="One article cut into five posts; the post under the pointer lifts."></div>
+              <span class="feature__read" data-figure-read="cut" aria-hidden="true">rest</span>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="feature__body">
+              <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <h3 class="card__title">Search &amp; AI visibility</h3>
+              <p class="card__text">SEO for Google, GEO for ChatGPT, Perplexity and similar. Monthly topic research from your data, refreshes for articles that are losing rankings, and monitoring of chosen questions in AI answers.</p>
+              <a class="btn btn--ghost btn--sm feature__more" href="/services/search-ai-visibility" aria-label="Learn more about Search and AI visibility">Learn more</a>
+            </div>
+            <div class="feature__art">
+              <div class="figure" data-figure="rank" aria-label="A field of topics; the ones near the pointer rise in rank."></div>
+              <span class="feature__read" data-figure-read="rank" aria-hidden="true">rest</span>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="feature__body">
+              <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <h3 class="card__title">Product pipeline</h3>
+              <p class="card__text">When your team ships something, the content follows. An automation watches the product work in your Slack and pings the right people: what's going out, which article or post it needs, and who owns it. You also see which product brings the most traffic and which post about it gets the most views.</p>
+              <a class="btn btn--ghost btn--sm feature__more" href="/services/product-pipeline" aria-label="Learn more about Product pipeline">Learn more</a>
+            </div>
+            <div class="feature__art">
+              <div class="figure" data-figure="pipeline" aria-label="Five steps from a product release to views; the step under the pointer lifts."></div>
+              <span class="feature__read" data-figure-read="pipeline" aria-hidden="true">rest</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- partial: before / after -->
+    <section id="compare" class="section ba" aria-labelledby="ba-title">
+      <div class="wrap">
+        <header class="section__head section__head--center">
+          <h2 id="ba-title" class="section__title">Before and after working with Radova</h2>
+          <p class="section__lede">Content stops depending on whoever has a free evening, and starts showing up in search every month.</p>
+        </header>
+        <div class="ba__grid">
+          <article class="ba__card ba__card--without">
+            <span class="ba__tag">Without Radova</span>
+            <h3 class="ba__title">Content when someone has time, and nobody knows if it works</h3>
+            <ul class="ba__list">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg><span>The blog goes quiet whenever a launch takes over</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg><span>Topics picked from a hunch or a competitor's blog</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg><span>Generic drafts you end up rewriting yourself</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg><span>Old articles lose rankings and nobody notices</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg><span>No one can say what content brings in</span></li>
+            </ul>
+          </article>
+          <article class="ba__card ba__card--with">
+            <span class="ba__tag">With Radova</span>
+            <h3 class="ba__title">A steady program, measured by what it brings in</h3>
+            <ul class="ba__list">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M6.2 10.4l2.5 2.5 5.1-5.3" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>4, 8 or 12 articles a month on a calendar you approve</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M6.2 10.4l2.5 2.5 5.1-5.3" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Topics from your Search Console data and buyer questions</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M6.2 10.4l2.5 2.5 5.1-5.3" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Drafts built on your product, checked by an editor</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M6.2 10.4l2.5 2.5 5.1-5.3" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Articles losing rankings refreshed every month</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="M6.2 10.4l2.5 2.5 5.1-5.3" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A monthly review against your week-one baseline</span></li>
+            </ul>
+            <a class="btn btn--light btn--lg ba__cta" href="https://cal.com/radova/intro">Book an intro call</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- partial: mid cta -->
+    <section class="section cta-mid" aria-labelledby="cta-mid-title">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="cta-box__copy">
+            <h2 id="cta-mid-title" class="cta-box__title">Start with a <span class="accent">30-minute call</span></h2>
+            <p class="cta-box__lede">Bring your site URL. We look at your search data together and tell you which package fits. No slides, no obligation.</p>
+            <div class="cta-box__actions">
+              <a class="btn btn--primary btn--lg" href="#book">Book an intro call</a>
+              <a class="btn btn--ghost btn--lg" href="#packages">See packages</a>
+            </div>
+          </div>
+          <div class="cta-box__roll">
+            <p class="sr-only">Built for:</p>
+            <div class="cta-roll">
+              <ul class="cta-roll__track">
+                <li>SaaS founders</li>
+                <li>Heads of growth</li>
+                <li>Product marketers</li>
+                <li>Seed to Series A</li>
+                <li>Teams with no writers</li>
+                <li>Lean marketing teams</li>
+                <li aria-hidden="true">SaaS founders</li>
+                <li aria-hidden="true">Heads of growth</li>
+                <li aria-hidden="true">Product marketers</li>
+                <li aria-hidden="true">Seed to Series A</li>
+                <li aria-hidden="true">Teams with no writers</li>
+                <li aria-hidden="true">Lean marketing teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partial: packages -->
+    <section id="packages" class="section" aria-labelledby="packages-title">
+      <div class="wrap">
+        <div class="ip-root" data-ip>
+          <div>
+            <div class="ip-reveal" data-ip-reveal>
+              <header class="section__head section__head--center ip-head">
+                <span class="tag">Packages</span>
+                <h2 id="packages-title" class="section__title">Packages from <span class="ip-from">€2,000</span> a month</h2>
+                <p class="section__lede">Three sizes of the same program, exact price confirmed on the call. Minimum term is three months, because search results take that long to show. One-time onboarding is quoted separately.</p>
+                <div class="ip-toggle" role="group" aria-label="Show volume per">
+                  <span class="ip-toggle-pill" aria-hidden="true"></span>
+                  <button type="button" aria-pressed="true" data-ip-period="month">Per month</button>
+                  <button type="button" aria-pressed="false" data-ip-period="term">Per term<span class="ip-save">3 mo</span></button>
+                </div>
+              </header>
+              <div class="ip-plans">
+            <div class="ip-frame">
+              <article class="card ip-plan">
+                <h3 class="ip-plan-name">Starter</h3>
+                <p class="ip-plan-desc">For teams starting a steady content rhythm.</p>
+                <p class="ip-price"><span data-ip-count="4">4</span><span class="ip-per" data-ip-per>articles / month</span></p>
+                <p class="ip-saving" data-ip-note>Billed monthly, after onboarding</p>
+                <ul class="ip-feats">
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 social channels, 2 posts a week</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1 older article refreshed</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>10 questions monitored in AI answers</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Written monthly report</li>
+                </ul>
+                <a class="btn btn--ghost btn--lg ip-btn" href="#book">Talk about Starter</a>
+              </article>
+            </div>
+            <div class="ip-frame">
+              <article class="card ip-plan ip-plan-hot">
+                <h3 class="ip-plan-name">Growth<span class="ip-badge">Recommended</span></h3>
+                <p class="ip-plan-desc">For teams that want search and AI answers to move every month.</p>
+                <p class="ip-price"><span data-ip-count="8">8</span><span class="ip-per" data-ip-per>articles / month</span></p>
+                <p class="ip-saving" data-ip-note>Billed monthly, after onboarding</p>
+                <ul class="ip-feats">
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 social channels, 3 posts a week</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 older articles refreshed</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>25 questions monitored in AI answers</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>30-minute monthly review call</li>
+                </ul>
+                <a class="btn btn--primary btn--lg ip-btn" href="#book">Talk about Growth</a>
+              </article>
+            </div>
+            <div class="ip-frame">
+              <article class="card ip-plan">
+                <h3 class="ip-plan-name">Scale</h3>
+                <p class="ip-plan-desc">For teams covering a wide topic space across channels.</p>
+                <p class="ip-price"><span data-ip-count="12">12</span><span class="ip-per" data-ip-per>articles / month</span></p>
+                <p class="ip-saving" data-ip-note>Billed monthly, after onboarding</p>
+                <ul class="ip-feats">
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2–3 social channels, 5 posts a week</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>4 older articles refreshed</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>50 questions monitored in AI answers</li>
+                  <li><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Review call plus written report</li>
+                </ul>
+                <a class="btn btn--ghost btn--lg ip-btn" href="#book">Talk about Scale</a>
+              </article>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scope">
+          <h3 class="scope__title">Not included in any package</h3>
+          <ul class="crosses">
+            <li>Tool and API costs (on your own accounts, or billed separately)</li>
+            <li>Graphics, video and animation</li>
+            <li>Outreach, cold email and paid ads</li>
+            <li>Site fixes that need your developer</li>
+            <li>Original research or interviews beyond the agreed expert check-ins</li>
+            <li>Extra social channels beyond the package</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- partial: faq -->
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="wrap faq">
+        <div class="faq__side">
+          <h2 id="faq-title" class="section__title">Questions before you book</h2>
+          <p class="section__lede">The things founders ask us first. Anything else, bring it to the call.</p>
+          <ul class="trust">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>
+              <span><b>Your content stays yours.</b></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/></svg>
+              <span><b>Access you control.</b></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l7 3v5.5c0 4.2-3 7.4-7 8.5-4-1.1-7-4.3-7-8.5V6.5z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg>
+              <span><b>Based in Germany, built for GDPR.</b></span>
+            </li>
+          </ul>
+        </div>
+        <div class="faq__list">
+            <details class="faq__item">
+              <summary><span>Is the content written by AI?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>The first draft is. It is written by our system from a knowledge base about your product, not from a model&#x27;s general knowledge. Then an editor checks every claim against your product docs and fixes tone, structure and SEO, and you approve it. Nothing is published without a person signing it off.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Will Google penalise AI-assisted content?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>Google ranks content on whether it is helpful, not on how it was produced. What gets demoted is thin, unchecked content published at volume. Every article here is grounded in your product, fact-checked by an editor and approved by you before it goes live.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Who owns the content and the system?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>You do. The articles, the knowledge base about your product, your brand voice guide and the workflows built for you stay yours, including if you stop working with us.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>What do you need from our side?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>Access to Google Search Console, GA4, your CMS and the social accounts we post to. One person who approves content within the agreed window, for example two working days. And a product expert we can talk to for 15 minutes, twice a month.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>How soon will we see results?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>Onboarding takes about six weeks, so the first production articles go live in month two. Search results usually take around three months to show, which is why the minimum term is three months. Every monthly review compares results with the baseline audit from week one.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>What does visibility in AI answers mean?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>Tools like ChatGPT and Perplexity answer questions by quoting sources. We pick the questions your buyers ask, structure your content so it can be quoted (direct answers, clean headings, schema, data), and check every month whether you are cited for them.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Can we stop after the minimum term?</span><svg class="faq__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></summary>
+              <p>Yes. After the first three months the program runs month to month, and you can stop at the end of any month. You keep everything that was built.</p>
+            </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- partial: closing call -->
+    <section id="book" class="section closing" aria-labelledby="book-title">
+      <div class="wrap closing__inner">
+        <h2 id="book-title" class="closing__title">Book a 30-minute intro call</h2>
+        <p class="section__lede">We'll look at your site and your data together, check the fit, and tell you which package makes sense. Bring your site URL. No slides.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://cal.com/radova/intro">Pick a time</a>
+        </div>
+        <ol class="next" aria-label="What happens after you book">
+          <li><span class="next__no">01</span><b>The call</b><span>30 minutes. We look at your site and your search data together and check the fit.</span></li>
+          <li><span class="next__no">02</span><b>Your proposal</b><span>Within two working days: the package that fits, the onboarding price and a start date.</span></li>
+          <li><span class="next__no">03</span><b>Onboarding starts</b><span>Week one: access, a baseline audit and the first work on your product knowledge base.</span></li>
+        </ol>
+        <p class="next__note">We reply within one working day. No obligation after the call.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- partial: footer -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div>
+        <a class="brand" href="/" aria-label="Radova home">
+          <svg class="brand__mark" viewBox="0 0 28 28" aria-hidden="true">
+            <rect x="1" y="1" width="26" height="26" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M8.5 14.5l3.8 3.8 7.2-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name">Radova</span>
+        </a>
+        <p class="site-footer__tag">Content programs for SaaS companies. Based in Germany.</p>
+      </div>
+      <nav aria-label="Legal">
+        <ul class="site-footer__links">
+          <li><a href="/impressum">Impressum</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__small">© <span data-year>2026</span> Radova</p>
+    </div>
+  </footer>
+</body>
+</html>

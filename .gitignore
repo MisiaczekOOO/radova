@@ -1,0 +1,7 @@
+# Internal notes and tool state, kept out of the public repo
+.claude/
+.impeccable/
+docs/
+DESIGN.md
+PRODUCT.md
+.DS_Store
