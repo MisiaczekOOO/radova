@@ -1429,3 +1429,39 @@ strong { font-family: var(--font-display); font-weight: 600; }
   .process__art svg * { animation: none !important; }
   .pa-text, .pa-chart { stroke-dashoffset: 0; }
 }
+
+/* 404 ------------------------------------------------------------------ */
+
+.nf-body { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+.nf-top { padding-block: 20px; }
+.nf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 24px 64px;
+}
+.nf__type {
+  width: 100%;
+  max-width: 880px;
+  height: clamp(180px, 38vw, 360px);
+  color: var(--color-phosphor-green);
+  font-family: var(--font-display);
+  touch-action: none;
+}
+.nf__type canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.nf__lead {
+  margin-top: var(--spacing-24, 24px);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-heading-sm);
+  line-height: 1.25;
+}
+.nf__text {
+  max-width: 44ch;
+  margin-top: 12px;
+  color: var(--color-silver-mist);
+}
+.nf__btn { margin-top: 32px; }
