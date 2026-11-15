@@ -1172,3 +1172,83 @@ strong { font-family: var(--font-display); font-weight: 600; }
 .ap__btn:hover, .ap__link:hover { color: var(--color-signal); }
 .ap__link { border: 0; background: none; color: var(--color-smoke); font: inherit; cursor: pointer; padding: 0; }
 @media (max-width: 640px) { .ap { left: 8px; right: 8px; bottom: 8px; width: auto; } }
+
+/* Contact: big "Let's work together" link at the very bottom.
+   The whole headline + arrow is one link to the booking page. */
+
+.contact { padding-block: calc(var(--section-gap) + 32px); border-top: 1px solid var(--color-charcoal); }
+.contact__inner { display: flex; flex-direction: column; align-items: center; gap: var(--spacing-48); text-align: center; }
+.contact__status {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-source-code-pro); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--color-silver-mist);
+}
+.contact__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-phosphor-green); box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-phosphor-green) 18%, transparent); }
+
+.contact__link {
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: var(--spacing-32);
+  color: var(--color-snow);
+  text-decoration: none;
+}
+.contact__title {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(48px, 9vw, 112px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.contact__row { display: block; overflow: hidden; padding-bottom: 0.08em; }
+.contact__row > span { display: block; transition: transform 700ms var(--ease); }
+.contact__row--dim { color: var(--color-smoke); }
+.contact__row--dim > span { transition-delay: 60ms; }
+.contact__link:hover .contact__row > span,
+.contact__link:focus-visible .contact__row > span { transform: translateY(-8%); }
+
+.contact__arrow {
+  position: relative;
+  display: grid; place-items: center;
+  width: 80px; height: 80px;
+  border: 1px solid var(--color-slate);
+  border-radius: 50%;
+  color: var(--color-snow);
+  transition: transform 500ms var(--ease), background-color 500ms var(--ease), border-color 500ms var(--ease), color 500ms var(--ease);
+}
+.contact__arrow svg { width: 28px; height: 28px; transition: transform 500ms var(--ease); }
+.contact__link:hover .contact__arrow,
+.contact__link:focus-visible .contact__arrow {
+  transform: scale(1.1);
+  background: var(--color-phosphor-green);
+  border-color: var(--color-phosphor-green);
+  color: var(--color-obsidian);
+}
+.contact__link:hover .contact__arrow svg,
+.contact__link:focus-visible .contact__arrow svg { transform: translate(2px, -2px); }
+.contact__link:active .contact__arrow { transform: scale(1.02); }
+.contact__link:focus-visible { outline: none; }
+.contact__link:focus-visible .contact__arrow { outline: 2px solid var(--color-phosphor-green); outline-offset: 6px; }
+
+/* Thin rules either side of the headline that stretch on hover */
+.contact__line {
+  position: absolute; top: 28%;
+  width: 48px; height: 1px;
+  background: var(--color-slate);
+  transition: transform 500ms var(--ease), background-color 500ms var(--ease);
+}
+.contact__line--l { right: calc(100% + 32px); transform-origin: right; }
+.contact__line--r { left: calc(100% + 32px); transform-origin: left; }
+.contact__link:hover .contact__line { transform: scaleX(1.5); background: var(--color-silver-mist); }
+
+.contact__lede { max-width: 40ch; font-size: var(--text-body); line-height: 1.6; color: var(--color-silver-mist); margin-top: calc(-1 * var(--spacing-16)); }
+.contact__note { margin-top: calc(-1 * var(--spacing-32)); font-family: var(--font-source-code-pro); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-smoke); }
+
+@media (max-width: 640px) {
+  .contact__line { display: none; }
+  .contact__arrow { width: 64px; height: 64px; }
+  .contact__arrow svg { width: 24px; height: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact__row > span, .contact__arrow, .contact__arrow svg, .contact__line { transition: none; }
+  .contact__link:hover .contact__row > span { transform: none; }
+}
